@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 30px;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Input Fields */
+input[type='text'],
+input[type='number'] {
+  border-radius: 25px;
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+input[type='text']:focus,
+input[type='number']:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Projects List */
+.projects-list {
+  margin-top: 20px;
+}
+
+.projects-list div {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.projects-list div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.projects-list h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.projects-list p {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  input[type='text'],
+  input[type='number'] {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
